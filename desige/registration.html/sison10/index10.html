@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascrip and jquery example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" integrity="sha512-CwHUCK55pONjDxvPZQeuwKpxos8mPyEv9gGuWC8Vr0357J2uXg1PycGDPND9EgdokSFTG6kgSApoDj9OM22ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <script>
+        // <!-- jquery temlate : mẫu dùng chung của jquary-->
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#hello").html('hello,world');
+            $('.red').before("<p>before</p>")
+                     .after("<p>after</p>");
+                     $('p').prepend("tag-name matched");
+                     $('h2').addClass('green');
+        })
+    </script>
+    <style>
+        .red{color:blue;}
+        .green{color:green}
+       
+    </style>
+    <h1 id="hello">hi!</h1>
+    <p class="red">secod line</p>
+    <h2>hello</h2>
+</body>
+</html>

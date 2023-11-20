@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascrip and jquery even</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" integrity="sha512-CwHUCK55pONjDxvPZQeuwKpxos8mPyEv9gGuWC8Vr0357J2uXg1PycGDPND9EgdokSFTG6kgSApoDj9OM22ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <script>
+        //jiquery code here
+        $(document).ready(function(){
+            $("#hello").html('click me!');
+            $("#hello").click(function(){
+            return false;
+            });
+            $('p').mouseover(function(){
+                $(this).removeClass('green')
+
+                });
+                $('p').mouseover(function(){
+                    $(this).addClass('green');
+                });
+        });
+    </script>
+    <style>
+        /* css styleheet code here*/
+        .red{color: red;}
+        .green{color: black;}
+        .blue{color: blue;}
+    </style>
+    <h1 id="hello">&nbsp;</h1>
+    <p id="message" class="red">fist line</p>
+    <p class="red">second line</p>
+    <P onmouseover="functionname()"> third kine</P>
+    <P> third line</P>
+</body>
+</html>
