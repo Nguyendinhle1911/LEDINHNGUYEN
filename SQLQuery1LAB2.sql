@@ -1,0 +1,33 @@
+IF EXISTS (SELECT * FROM sys.databases WHERE NAME ='LAB2')
+	DROP DATABASE LAB2
+GO
+CREATE DATABASE LAB2
+GO
+USE LAB2
+GO
+
+CREATE TABLE PhongBan(
+MaPB int PRIMARY KEY IDENTITY,
+TenPB nvarchar(50)
+);
+
+CREATE TABLE NhanVien(
+MaNV int PRIMARY KEY IDENTITY,
+TenNV nvarchar(50) ,
+NgaySinh Datetime check(NgaySinh < CURRENT_TIMESTAMP),
+SoCMND char(9)  check (SoCMND >= 0),
+GioiTinh char(1),
+Diachi nvarchar(100),
+NgayVaoLam Datetime,
+MaPB int,
+CONSTRAINT MaPB FOREIGN KEY (MaPB) REFERENCES PhongBan(MaPB) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE LuongDA(
+MaDA int PRIMARY KEY IDENTITY,
+MaNV int,
+CONSTRAINT MaNV FOREIGN KEY(MaNV) REFERENCES NhanVien(MaNV) ON DELETE CASCADE ON UPDATE CASCADE,
+NgayNhan Datetime check (NgayNhan = CURRENT_TIMESTAMP),
+SoTien MONEY check (SoTien > 0 )
+);
+ALTER TABLE NhanVien ADD CONSTRAINT NgayVaoLam check (NgayVaoLam > DATEADD (YEAR, 20, NgaySinh))
