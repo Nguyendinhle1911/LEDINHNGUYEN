@@ -1,38 +1,18 @@
-USE master
-GO 
-IF EXISTS (SELECT * FROM SYS.DATABASES WHERE Name ='BAITHI')
-DROP DATABASE BAITHI
+USE BaiThiSQL
 GO
-CREATE DATABASE BAITHI
-GO
-USE BAITHI
-GO
- CREATE TABLE Employee (
-    EmployeeID INT PRIMARY KEY,
-    FirstName NVARCHAR(50),
-    LastName NVARCHAR(50),
-    BirthDate DATE,
-    Gender NVARCHAR(1),
-    DepartmentID INT
-);
 
-CREATE TABLE Department (
-    DepartmentID INT PRIMARY KEY,
-    DepartmentName NVARCHAR(50)
-);
+CREATE VIEW TotalSalaries AS 
+SELECT 
+    D.DepartmentCode AS DepartmentCode,
+    D.DepartmentName AS DepartmentName,
+    SUM(S.GrossSalary) AS TotalGrossSalary,
+    SUM(S.NetSalary) AS TotalNetSalary
+FROM 
+    Department D
+JOIN Employee E ON D.DepartmentCode = E.DepartmentCode
+JOIN Salary S ON E.EmployeeCode = S.EmployeeCode
+GROUP BY 
+    D.DepartmentCode, D.DepartmentName;
 
-CREATE TABLE WorkRole (
-    WorkRoleID INT PRIMARY KEY,
-    WorkRoleName NVARCHAR(50)
-);
-
-CREATE TABLE WorkSchedule (
-    EmployeeID INT,
-    WorkRoleID INT,
-    StartDate DATE,
-    EndDate DATE,
-    DaysOff NVARCHAR(MAX),
-    Salary FLOAT,
-    FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID),
-    FOREIGN KEY (WorkRoleID) REFERENCES WorkRole(WorkRoleID)
-);
+SELECT * FROM TotalSalaries
+ORDER BY DepartmentCode ASC;
