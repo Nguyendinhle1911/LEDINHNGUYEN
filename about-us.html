@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PETBot | About Us</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href=".././images/Favicon/favicon.ico"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href=".././CSS/main.css" />
+    <link rel="stylesheet" href=".././CSS/about-us.css" />
+    <!-- Link FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Barlow+Condensed:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <!-- --------------- NavBar Menu ---------------- -->
+      <nav>
+        <!-- --------------- Logo ---------------- -->
+        <div class="logo">
+          <div class="image-logo">
+            <p class="textLogo1">BOTTLE</p>
+            <img src=".././images/HomePage/NavBarHeader/logo.jpg" alt="Logo" />
+          </div>
+          <div class="textLogo2">PET</div>
+        </div>
+        <!-- --------------- Menu ---------------- -->
+        <ul id="navBar">
+          <li id="close-btn" onclick="closeNavBar()">&times;</li>
+          <li class="link home">
+            <a href=".././HTML/home-page.html">Home</a>
+          </li>
+          <li class="link menu-products">
+            <a href="#">Products</a>
+            <div class="drop-menu" id="dropMenu">
+              <ul class="drop-menu-1">
+                <li class="text-header">| By Material</li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">PET (Polyetylen terephtalat)</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">PP (Polypropylene)</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">PC (Polycarbonate)</a>
+                </li>
+              </ul>
+              <ul class="drop-menu-2">
+                <li class="text-header">| By Type</li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href=".././HTML/airlessPumpBottle.html"
+                    >Airless Pump Bottle</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Boston Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Foam Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Spray Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Square Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Squeeze Bottle</a>
+                </li>
+              </ul>
+              <ul class="drop-menu-3">
+                <li class="text-header">| By Application</li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Water bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Juice Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Lotion Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Medicine Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Oil Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Chemical Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Travel Set Bottle</a>
+                </li>
+              </ul>
+              <ul class="drop-menu-4">
+                <li class="text-header">| Comestic Container</li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Roll Ball Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Sunscreen Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Skin Lotion Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Cream Bottle</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="link"><a href=".././HTML/news.html">News</a></li>
+          <li class="link">
+            <a href=".././HTML/contact-us.html">Contact Us</a>
+          </li>
+          <li class="link"><a href=".././HTML/about-us.html">About Us</a></li>
+          <li class="link"><a href=".././HTML/feedback.html">Feedback</a></li>
+        </ul>
+        <!-- --------------- Icons ---------------- -->
+        <div class="icons">
+          <!-- --------------- Search ---------------- -->
+          <div id="glass">
+            <i
+              class="fa-solid fa-magnifying-glass fa-lg"
+              style="color: #ffffff"
+            ></i>
+            <div id="showSearch">
+              <input type="search" placeholder="search here..." />
+            </div>
+          </div>
+          <!-- --------------- Shopping Cart ---------------- -->
+          <div class="icon-cart">
+            <i
+              class="fa-solid fa-cart-shopping fa-lg"
+              style="color: #ffffff"
+            ></i>
+            <span>0</span>
+          </div>
+          <!-- --------------- User Login and Admin login ---------------- -->
+          <div id="dropbtn">
+            <i
+              class="fa-solid fa-circle-user fa-2xl"
+              style="color: #ffffff"
+            ></i>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href=".././HTML/login.html"
+                ><i class="fa-solid fa-money-check fa-lg"></i> Customer</a
+              >
+            </div>
+          </div>
+          <i
+            class="fas fa-bars fa-lg"
+            id="menu-btn"
+            style="color: #ffffff"
+            onclick="openNavBar()"
+          ></i>
+        </div>
+      </nav>
+    </section>
+    <a class="goToUp" href="#"
+      ><i class="fa-solid fa-arrow-up" style="color: #000000"></i
+    ></a>
+    <section class="banner">
+      <div class="image"></div>
+      <div class="text"><span>About</span> Us</div>
+    </section>
+    <section class="content">
+      <div class="box">
+        <div class="part p1">
+          <div class="text-header">| Who Are We?</div>
+          <p>
+            We are PETBot company which is one of the well known business
+            entities involved in manufactures, supplies and exports all kinds of
+            PET/PP/PC Bottles. We have PET Bottle Factory. Available in
+            customized form, our machines used by a number of manufacturing
+            companies in the production of packaged drinking water, household
+            chemicals, pharmaceuticals, cooking oils, alcohol, rabbit care,
+            pesticides, ...
+          </p>
+        </div>
+        <div class="part p2">
+          <div class="text-header">| The Story of PETBot</div>
+          <p>
+            After establishing PETBot, Mr. Stress quickly realized that
+            producing plastic bottles was not just about creating a product. He
+            saw an opportunity to make a difference by focusing on recycling and
+            reusing plastic bottles. Mr. Stress decided to expand his business
+            by launching PETBot Company - a project aimed at collecting and
+            recycling used plastic bottles. This project not only helped reduce
+            plastic waste but also created a source of raw material for
+            producing new bottles. <br /><br />
+            PETBot Company became a significant part of PETBot's business
+            operations, helping the company not only produce high-quality
+            plastic bottles but also contribute to environmental protection.
+            This story proves that success comes not only from producing a good
+            product but also from creating value for the community and the
+            environment.
+          </p>
+        </div>
+        <div class="part p3">
+          <div class="text-header">| PETBot's Permission</div>
+          <p>
+            As PETBot continued to grow, Mr. Stress realized the importance of
+            obtaining the necessary permissions and certifications for his
+            business. This was crucial not only for the legality of his
+            operations but also for building trust with his customers and
+            partners. <br /><br />
+            1. <b>Business License:</b> <br />
+            Mr. Stress obtained a business license from the local government.
+            This gave PETBot the legal permission to operate in the region.
+            <br /><br />
+            2. <b>Environmental Compliance: <br /></b> Given the nature of
+            PETBot's operations, it was essential to comply with environmental
+            regulations. Mr. Stress ensured that PETBot followed all guidelines
+            related to waste management and recycling. <br /><br />
+            3. <b>Health and Safety Certifications: <br /></b> PETBot obtained
+            certifications confirming that their products are safe for food and
+            beverage storage. This was particularly important as PETBot's
+            bottles are often used for edible products. <br /><br />
+            4. <b>Patents and Trademarks: <br /></b> To protect PETBot's
+            innovative recycling process and brand, Mr. Stress secured patents
+            and registered trademarks. This ensured that PETBot's intellectual
+            property was protected. <br /><br />
+            5. <b>Permissions from Original Manufacturers:</b> <br />
+            In some cases, PETBot needed permission from the original
+            manufacturers to recycle certain types of plastic bottles. Mr.
+            Stress worked closely with these companies to ensure a mutually
+            beneficial relationship. <br />
+            <br />By securing these permissions, PETBot was not only able to
+            operate legally and ethically, but also gained the trust of its
+            customers and partners. This played a significant role in PETBot's
+            success and reputation in the industry.
+          </p>
+        </div>
+        <div class="part p4">
+          <div class="text-header">| PETBot's Staff</div>
+          <p>
+            Our employees are passionate professionals and experts around the
+            globe, their drive and dedication to their work is a vital condition
+            for the success of PETBOT. <br /><br />Not only does it provide a
+            safe work environment for employees, but a place where they can
+            thrive, wherever they are globally, allowing PETBOT employees to
+            feel motivated at work - an essential aspect of the success of a
+            business. <br /><br />
+            All employees are equipped with the tools to help them succeed
+            through training, challenges and opportunities, ideas from
+            individuals eager to grow and support PETBOT and our customers are
+            all welcome. <br /><br />With regular internal meetings and open
+            communication, we provide opportunities in our teams for employees
+            to develop their expertise and for teams to work together everywhere
+            worldwide to provide the best service. <br /><br />
+            Similarly, team building activities outside of working hours are
+            encouraged. These activities include sports, volunteer work, family
+            days and charity work.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ------------- Footer -------------------- -->
+    <footer>
+      <div class="box">
+        <div class="part-1">
+          <div class="socialsAndContact">
+            <!-- --------------- Text header and Socials ---------------- -->
+            <div class="col-5">
+              <div class="text-header">PETBot Company</div>
+              <!-- --------------- Social ---------------- -->
+              <div class="socials">
+                <a
+                  href="https://www.facebook.com/"
+                  title="Facebook"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook fa"></i
+                ></a>
+                <a href="https://twitter.com/" title="Twitter" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/"
+                  title="Instagram"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com/"
+                  title="Linkedin"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://youtube.com/" title="Youtube" target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+              <p>Team with 5 members.</p>
+            </div>
+            <!-- --------------- Contact Us ---------------- -->
+            <div class="col-1">
+              <div class="gmail">
+                <i class="fa-solid fa-envelope"></i> petbot@company.com
+              </div>
+              <div class="phoneNumber">
+                <i class="fa-solid fa-phone"></i> +84 36-384-568
+              </div>
+              <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                8 Ton That Thuyet, My Dinh,<br />
+                Nam Tu Liem, Ha Noi.
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d515.5973385199616!2d105.78198186858313!3d21.028761111310168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab00954decbf%3A0xdb4ee23b49ad50c8!2zRlBUIEFwdGVjaCBIw6AgTuG7mWkgLSBI4buHIHRo4buRbmcgxJHDoG8gdOG6oW8gbOG6rXAgdHLDrG5oIHZpw6puIHF14buRYyB04bq_!5e0!3m2!1svi!2s!4v1707111828114!5m2!1svi!2s"
+                width="300"
+                height="180"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- --------------- Link  ---------------- -->
+          <div class="col-3 col">
+            <div class="text-header">| By Application</div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Water Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Juice Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Lotion Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Medicine Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Oil Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Chemical Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Travel Set Bottle</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 col">
+            <div class="text-header">| By Type</div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href=".././HTML/airlessPumpBottle.html">Airless Pump Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Boston Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Foam Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Spray Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Square Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Squeeze Bottle</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col">
+            <div class="text-header">| By Material</div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-caret-right"></i><a href="">PET</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i><a href="">PP</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i><a href="">PC</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 col">
+            <div class="text-header">| Comestic Container</div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Roll Ball Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Sunscreen Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Skin Lotion Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Cream Bottle</a>
+              </li>
+            </ul>
+          </div>
+          <!-- --------------- End link ---------------- -->
+        </div>
+        <div class="part-2">&copy;PETBot 2024. All right reserved</div>
+      </div>
+    </footer>
+    <script src=".././JS/main.js"></script>
+  </body>
+</html>
