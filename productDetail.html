@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PETBot | Product Detail</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href=".././images/Favicon/favicon.ico"
+    />
+    <!-- Link FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href=".././CSS/home-page.css" />
+    <link rel="stylesheet" href=".././CSS/productDetail.css" />
+    <link rel="stylesheet" href=".././CSS/main.css" />
+    <!-- Link GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Barlow+Condensed:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="homePage">
+      <!-- --------------- Header ---------------- -->
+      <section class="header">
+        <!-- --------------- NavBar Menu ---------------- -->
+        <nav>
+          <!-- --------------- Logo ---------------- -->
+          <div class="logo">
+            <div class="image-logo">
+              <p class="textLogo1">BOTTLE</p>
+              <img
+                src=".././images/HomePage/NavBarHeader/logo.jpg"
+                alt="Logo"
+              />
+            </div>
+            <div class="textLogo2">PET</div>
+          </div>
+          <!-- --------------- Menu ---------------- -->
+          <ul id="navBar">
+            <li id="close-btn" onclick="closeNavBar()">&times;</li>
+            <li class="link home">
+              <a href=".././HTML/home-page.html">Home</a>
+            </li>
+            <li class="link menu-products">
+              <a href="#">Products</a>
+              <div class="drop-menu" id="dropMenu">
+                <ul class="drop-menu-1">
+                  <li class="text-header">| By Material</li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">PET (Polyetylen terephtalat)</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">PP (Polypropylene)</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">PC (Polycarbonate)</a>
+                  </li>
+                </ul>
+                <ul class="drop-menu-2">
+                  <li class="text-header">| By Type</li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href=".././HTML/airlessPumpBottle.html"
+                      >Airless Pump Bottle</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Boston Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Foam Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Spray Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Square Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Squeeze Bottle</a>
+                  </li>
+                </ul>
+                <ul class="drop-menu-3">
+                  <li class="text-header">| By Application</li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Water bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Juice Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Lotion Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Medicine Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Oil Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Chemical Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Travel Set Bottle</a>
+                  </li>
+                </ul>
+                <ul class="drop-menu-4">
+                  <li class="text-header">| Comestic Container</li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Roll Ball Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Sunscreen Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Skin Lotion Bottle</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-caret-right"></i
+                    ><a href="">Cream Bottle</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="link"><a href=".././HTML/news.html">News</a></li>
+            <li class="link">
+              <a href=".././HTML/contact-us.html">Contact Us</a>
+            </li>
+            <li class="link"><a href=".././HTML/about-us.html">About Us</a></li>
+            <li class="link"><a href=".././HTML/feedback.html">Feedback</a></li>
+          </ul>
+          <!-- --------------- Icons ---------------- -->
+          <div class="icons">
+            <!-- --------------- Search ---------------- -->
+            <div id="glass">
+              <i
+                class="fa-solid fa-magnifying-glass fa-lg"
+                style="color: #ffffff"
+              ></i>
+              <div id="showSearch">
+                <input type="search" placeholder="search here..." />
+              </div>
+            </div>
+            <!-- --------------- Shopping Cart ---------------- -->
+            <div class="icon-cart">
+              <i
+                class="fa-solid fa-cart-shopping fa-lg"
+                style="color: #ffffff"
+              ></i>
+              <span>0</span>
+            </div>
+            <!-- --------------- User Login and Admin login ---------------- -->
+            <div id="dropbtn">
+              <i
+                class="fa-solid fa-circle-user fa-2xl"
+                style="color: #ffffff"
+              ></i>
+              <div id="dropdown-content" class="dropdown-content">
+                <a href=".././HTML/login.html"
+                  ><i class="fa-solid fa-money-check fa-lg"></i> Customer</a
+                >
+              </div>
+            </div>
+            <i
+              class="fas fa-bars fa-lg"
+              id="menu-btn"
+              style="color: #ffffff"
+              onclick="openNavBar()"
+            ></i>
+          </div>
+        </nav>
+      </section>
+
+      <!-- --------------- SCroll Up Button ---------------- -->
+      <a class="goToUp" href="#"
+        ><i class="fa-solid fa-arrow-up" style="color: #000000"></i
+      ></a>
+      <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="btn">
+          <button class="close">CLOSE</button>
+          <button class="checkOut">
+            <a href=".././HTML/checkout.html">Check Out</a>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="title">PRODUCT DETAIL</div>
+        <div class="detail">
+          <div class="image">
+            <img
+              src=".././images/HomePage/Products/All/Airless-Cream-Bottles.png"
+            />
+          </div>
+          <div class="content">
+            <h1 class="name"></h1>
+            <div class="material"></div>
+            <div class="capacity"></div>
+            <div class="price"></div>
+            <div class="description"></div>
+            <div class="buttons">
+              <button class="addCart">
+                Add To Cart
+                <span>
+                  <svg
+                    class=""
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 18 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <a href=".././FileDownload/ProductDetail.docx" download>
+                <button id="btn-download" title="Download Product Detail">
+                  <i class="fa fa-download"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="title">Similar Product</div>
+        <div class="products-container"></div>
+      </div>
+      <footer>
+        <div class="box">
+          <div class="part-1">
+            <div class="socialsAndContact">
+              <!-- --------------- Text header and Socials ---------------- -->
+              <div class="col-5">
+                <div class="text-header">PETBot Company</div>
+                <!-- --------------- Social ---------------- -->
+                <div class="socials">
+                  <a
+                    href="https://www.facebook.com/"
+                    title="Facebook"
+                    target="_blank"
+                    ><i class="fa-brands fa-facebook fa"></i
+                  ></a>
+                  <a href="https://twitter.com/" title="Twitter" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/"
+                    title="Instagram"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a
+                    href="https://linkedin.com/"
+                    title="Linkedin"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a href="https://youtube.com/" title="Youtube" target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+                <p>Team with 5 members.</p>
+              </div>
+              <!-- --------------- Contact Us ---------------- -->
+              <div class="col-1">
+                <div class="gmail">
+                  <i class="fa-solid fa-envelope"></i> petbot@company.com
+                </div>
+                <div class="phoneNumber">
+                  <i class="fa-solid fa-phone"></i> +84 36-384-568
+                </div>
+                <div class="address">
+                  <i class="fa-solid fa-location-dot"></i>
+                  8 Ton That Thuyet, My Dinh,<br />
+                  Nam Tu Liem, Ha Noi.
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d515.5973385199616!2d105.78198186858313!3d21.028761111310168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab00954decbf%3A0xdb4ee23b49ad50c8!2zRlBUIEFwdGVjaCBIw6AgTuG7mWkgLSBI4buHIHRo4buRbmcgxJHDoG8gdOG6oW8gbOG6rXAgdHLDrG5oIHZpw6puIHF14buRYyB04bq_!5e0!3m2!1svi!2s!4v1707111828114!5m2!1svi!2s"
+                  width="300"
+                  height="180"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <!-- --------------- Link  ---------------- -->
+            <div class="col-3 col">
+              <div class="text-header">| By Application</div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Water Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Juice Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Lotion Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Medicine Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Oil Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Chemical Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Travel Set Bottle</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2 col">
+              <div class="text-header">| By Type</div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href=".././HTML/airlessPumpBottle.html"
+                    >Airless Pump Bottle</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Boston Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Foam Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Spray Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Square Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Squeeze Bottle</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col">
+              <div class="text-header">| By Material</div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i><a href="">PET</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i><a href="">PP</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i><a href="">PC</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 col">
+              <div class="text-header">| Comestic Container</div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Roll Ball Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Sunscreen Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Skin Lotion Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Cream Bottle</a>
+                </li>
+              </ul>
+            </div>
+            <!-- --------------- End link ---------------- -->
+          </div>
+          <div class="part-2">&copy;PETBot 2024. All right reserved</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src=".././JS/productDetail.js"></script>
+  <script src=".././JS/main.js"></script>
+</html>

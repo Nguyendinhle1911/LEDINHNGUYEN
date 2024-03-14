@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PETBot | Invoice</title>
+    <!-- Link Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href=".././images/Favicon/favicon.ico"
+    />
+    <!-- Link FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href=".././CSS/main.css" />
+    <link rel="stylesheet" href=".././CSS/orderBill.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div>
+          <div class="card">
+            <div class="logo">PETBot Invoice</div>
+            <div class="invoice">
+              <h5>Your order Informations!</h5>
+              <div class="border-top border-bottom">
+                <table class="days">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div>
+                          <span class="block">Order Date</span>
+                          <span>25 Feb,2024</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="block">Order No</span>
+                          <span>#PTB50892</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <span class="block">Shipping Address</span>
+                          <span style="white-space: nowrap"
+                            >8 Nam Tu Liem, HN, Viet Nam</span
+                          >
+                        </div>
+                      </td>
+                      <td>
+                        <div style="text-align: center">
+                          <span class="block">Status</span>
+                          <span id="Status">Pending</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product border-bottom">
+                <table style="margin: 0.5rem 0">
+                  <tbody>
+                    <tr style="line-height: normal">
+                      <td width="20%">
+                        <img src=".././images/ProductType/al1.jpg" width="90" />
+                      </td>
+                      <td width="60%">
+                        <span style="font-weight: 600"
+                          >Airless Pump Bottle</span
+                        >
+                        <div class="product-qty">
+                          <span class="block">Quantity: 1</span>
+                          <span>Material: PET</span>
+                          <span>Capacity: 75ml</span>
+                        </div>
+                      </td>
+                      <td width="20%">
+                        <div class="text-right">
+                          <span>$0.8</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr style="line-height: normal">
+                      <td width="20%">
+                        <img src=".././images/ProductType/al2.jpg" width="90" />
+                      </td>
+                      <td width="60%">
+                        <span style="font-weight: 600"
+                          >Airless Pump Bottle</span
+                        >
+                        <div class="product-qty">
+                          <span class="block">Quantity: 1</span>
+                          <span>Material: PP</span>
+                          <span>Capacity: 50ml</span>
+                        </div>
+                      </td>
+                      <td width="20%">
+                        <div class="text-right">
+                          <span>$0.4</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr style="line-height: normal">
+                      <td width="20%">
+                        <img src=".././images/ProductType/al3.jpg" width="90" />
+                      </td>
+                      <td width="60%">
+                        <span style="font-weight: 600"
+                          >Airless Pump Bottle</span
+                        >
+                        <div class="product-qty">
+                          <span class="block">Quantity: 1</span>
+                          <span>Material: PC</span>
+                          <span>Capacity: 80ml</span>
+                        </div>
+                      </td>
+                      <td width="20%">
+                        <div class="text-right">
+                          <span>$0.6</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr style="line-height: normal">
+                      <td width="20%">
+                        <img src=".././images/ProductType/al4.jpg" width="90" />
+                      </td>
+                      <td width="60%">
+                        <span style="font-weight: 600"
+                          >Airless Pump Bottle</span
+                        >
+                        <div class="product-qty">
+                          <span class="block">Quantity: 1</span>
+                          <span>Material: PET</span>
+                          <span>Capacity: 60ml</span>
+                        </div>
+                      </td>
+                      <td width="20%">
+                        <div class="text-right">
+                          <span>$0.4</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <div>
+                  <table>
+                    <tbody class="totals">
+                      <tr>
+                        <td>
+                          <div>
+                            <span style="font-weight: 600">Total:</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div><span>$2.20</span></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <span style="font-weight: 600">Discount:</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <span>0</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="border-top border-bottom">
+                        <td>
+                          <div>
+                            <span style="font-weight: 600">Subtotal:</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            <span>$2.20</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <p>
+                We will be sending shipping confirmation email when the item
+                shipped successfully!
+              </p>
+              <p>Thanks for shopping with us!</p>
+              <span
+                ><b><i>PETBot Company.</i></b></span
+              >
+            </div>
+            <div class="footer">
+              <span
+                >Need Help? Go
+                <a href=".././HTML/contact-us.html">here</a></span
+              >
+              <span>30 Feb, 2024</span>
+              <span
+                ><h2>
+                  <i class="fa-solid fa-circle-left"></i>
+                  <a href=".././HTML/home-page.html" style="color: black"
+                    >Home Page</a
+                  >
+                </h2></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src=".././JS/admin.js"></script>
+  </body>
+</html>

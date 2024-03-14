@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PETbot | News</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href=".././images/Favicon/favicon.ico"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href=".././CSS/main.css" />
+    <link rel="stylesheet" href=".././CSS/news.css" />
+    <!-- Link FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Barlow+Condensed:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script src=".././JS/main.js"></script>
+  <body>
+    <!-- --------------- Header ---------------- -->
+    <section class="header">
+      <!-- --------------- NavBar Menu ---------------- -->
+      <nav>
+        <!-- --------------- Logo ---------------- -->
+        <div class="logo">
+          <div class="image-logo">
+            <p class="textLogo1">BOTTLE</p>
+            <img
+              src=".././images/HomePage/NavBarHeader/logo.jpg"
+              alt="Logo"
+            />
+          </div>
+          <div class="textLogo2">PET</div>
+        </div>
+        <!-- --------------- Menu ---------------- -->
+        <ul id="navBar">
+          <li id="close-btn" onclick="closeNavBar()">&times;</li>
+          <li class="link home">
+            <a href=".././HTML/home-page.html">Home</a>
+          </li>
+          <li class="link menu-products">
+            <a href="#">Products</a>
+            <div class="drop-menu" id="dropMenu">
+              <ul class="drop-menu-1">
+                <li class="text-header">| By Material</li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">PET (Polyetylen terephtalat)</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">PP (Polypropylene)</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">PC (Polycarbonate)</a>
+                </li>
+              </ul>
+              <ul class="drop-menu-2">
+                <li class="text-header">| By Type</li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href=".././HTML/airlessPumpBottle.html"
+                    >Airless Pump Bottle</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Boston Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Foam Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Spray Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Square Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Squeeze Bottle</a>
+                </li>
+              </ul>
+              <ul class="drop-menu-3">
+                <li class="text-header">| By Application</li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Water bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Juice Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Lotion Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Medicine Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Oil Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Chemical Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Travel Set Bottle</a>
+                </li>
+              </ul>
+              <ul class="drop-menu-4">
+                <li class="text-header">| Comestic Container</li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Roll Ball Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Sunscreen Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Skin Lotion Bottle</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i
+                  ><a href="">Cream Bottle</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="link"><a href=".././HTML/news.html">News</a></li>
+          <li class="link">
+            <a href=".././HTML/contact-us.html">Contact Us</a>
+          </li>
+          <li class="link"><a href=".././HTML/about-us.html">About Us</a></li>
+          <li class="link"><a href=".././HTML/feedback.html">Feedback</a></li>
+        </ul>
+        <!-- --------------- Icons ---------------- -->
+        <div class="icons">
+          <!-- --------------- Search ---------------- -->
+          <div id="glass">
+            <i
+              class="fa-solid fa-magnifying-glass fa-lg"
+              style="color: #ffffff"
+            ></i>
+            <div id="showSearch">
+              <input type="search" placeholder="search here..." />
+            </div>
+          </div>
+          <!-- --------------- Shopping Cart ---------------- -->
+          <div class="icon-cart">
+            <i
+              class="fa-solid fa-cart-shopping fa-lg"
+              style="color: #ffffff"
+            ></i>
+            <span>0</span>
+          </div>
+          <!-- --------------- User Login and Admin login ---------------- -->
+          <div id="dropbtn">
+            <i
+              class="fa-solid fa-circle-user fa-2xl"
+              style="color: #ffffff"
+            ></i>
+            <div id="dropdown-content" class="dropdown-content">
+              <a href=".././HTML/login.html"
+                ><i class="fa-solid fa-money-check fa-lg"></i> Customer</a
+              >
+            </div>
+          </div>
+          <i
+            class="fas fa-bars fa-lg"
+            id="menu-btn"
+            style="color: #ffffff"
+            onclick="openNavBar()"
+          ></i>
+        </div>
+      </nav>
+    </section>
+
+    <!-- --------------- SCroll Up Button ---------------- -->
+    <a class="goToUp" href="#"
+      ><i class="fa-solid fa-arrow-up" style="color: #000000"></i
+    ></a>
+    <!-- --------------- Show CartTab right ---------------- -->
+    <div class="cartTab">
+      <h1>Shopping Cart</h1>
+      <div class="listCart"></div>
+      <div class="btn">
+        <button class="close">CLOSE</button>
+        <button class="checkOut">
+          <a href=".././HTML/checkout.html">Check Out</a>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <section class="banner">
+        <div class="bg image"></div>
+        <div class="text">
+          <h2 style="letter-spacing: 0.5rem; font-size: 4rem">NEWS</h2>
+          <br />
+          <h2>-- Knowledge Center Of Bottle Package --</h2>
+        </div>
+      </section>
+      <section class="content d-flex">
+        <div class="main">
+          <div class="row r1">
+            <div class="col-1">
+              <div>15</div>
+              <div>AUG</div>
+            </div>
+            <div class="col-2">
+              <img src=".././images/News/news-1.png" alt="image" />
+              <div class="icon d-flex">
+                <div class="icon-1">
+                  <i class="fa-regular fa-pen-to-square fa-sm"></i>
+                  Nguyen Anh
+                  <i class="fa-regular fa-comment fa-sm"></i>
+                  30
+                  <i class="fa-solid fa-tag fa-sm"></i>
+                  Knowledge
+                </div>
+                <div class="icon-2">
+                  <i class="fa-regular fa-eye fa-sm"></i>
+                  30
+                  <i class="fa-solid fa-heart fa-sm"></i>
+                  25
+                </div>
+              </div>
+              <a href=".././HTML/post-1.html" class="title"
+                >Everything You Need To Know About Droppers And Pipettes
+              </a>
+              <div class="contents">
+                Droppers and pipettes are essential tools used across
+                healthcare, science, and more. Although small, they play a big
+                role in transferring and measuring liquids accurately. <br />
+                A dropper consists of a squeezable tube used to transfer small
+                volumes of liquid, drop by drop. A pipette is designed to
+                precisely measure and transfer liquids in volumes ranging from
+                microliters to milliliters...
+              </div>
+            </div>
+          </div>
+          <div class="row r3">
+            <div class="col-1">
+              <div>19</div>
+              <div>NOW</div>
+            </div>
+            <div class="col-2">
+              <img src=".././images/News/r3.jpg" alt="image" />
+              <div class="icon d-flex">
+                <div class="icon-1">
+                  <i class="fa-regular fa-pen-to-square fa-sm"></i>
+                  Nguyen Anh
+                  <i class="fa-regular fa-comment fa-sm"></i>
+                  30
+                  <i class="fa-solid fa-tag fa-sm"></i>
+                  Knowledge
+                </div>
+                <div class="icon-2">
+                  <i class="fa-regular fa-eye fa-sm"></i>
+                  30
+                  <i class="fa-solid fa-heart fa-sm"></i>
+                  25
+                </div>
+              </div>
+              <a href=".././HTML/post-1.html" class="title"
+                >Everything You Need To Know About Droppers And Pipettes
+              </a>
+              <div class="contents">
+                Droppers and pipettes are essential tools used across
+                healthcare, science, and more. Although small, they play a big
+                role in transferring and measuring liquids accurately. <br />
+                A dropper consists of a squeezable tube used to transfer small
+                volumes of liquid, drop by drop. A pipette is designed to
+                precisely measure and transfer liquids in volumes ranging from
+                microliters to milliliters...
+              </div>
+            </div>
+          </div>
+          <div class="row r4">
+            <div class="col-1">
+              <div>06</div>
+              <div>JUN</div>
+            </div>
+            <div class="col-2">
+              <img src=".././images/News/r4.jpg" alt="image" />
+              <div class="icon d-flex">
+                <div class="icon-1">
+                  <i class="fa-regular fa-pen-to-square fa-sm"></i>
+                  Nguyen Anh
+                  <i class="fa-regular fa-comment fa-sm"></i>
+                  30
+                  <i class="fa-solid fa-tag fa-sm"></i>
+                  Knowledge
+                </div>
+                <div class="icon-2">
+                  <i class="fa-regular fa-eye fa-sm"></i>
+                  30
+                  <i class="fa-solid fa-heart fa-sm"></i>
+                  25
+                </div>
+              </div>
+              <a href=".././HTML/post-1.html" class="title"
+                >Everything You Need To Know About Droppers And Pipettes
+              </a>
+              <div class="contents">
+                Droppers and pipettes are essential tools used across
+                healthcare, science, and more. Although small, they play a big
+                role in transferring and measuring liquids accurately. <br />
+                A dropper consists of a squeezable tube used to transfer small
+                volumes of liquid, drop by drop. A pipette is designed to
+                precisely measure and transfer liquids in volumes ranging from
+                microliters to milliliters...
+              </div>
+            </div>
+          </div>
+          <!-- --------------- ListPage ---------------- -->
+          <ul class="listPage">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>...</li>
+          </ul>
+        </div>
+        <aside>
+          <section class="latest-news">
+            <a href=".././HTML/news.html"
+              ><h2 class="title-header">| Recent Posts</h2></a
+            >
+            <div class="news n-1">
+              <div class="image">
+                <img src=".././images/News/trash.jpg" alt="image" />
+              </div>
+              <div class="d-flex">
+                <div>
+                  <i class="fa-regular fa-clock fa-sm"></i>
+                  <span class="day">29/02/2024</span>
+                </div>
+                <div>
+                  <i class="fa-regular fa-eye fa-sm"></i>
+                  <span class="day">24</span>
+                </div>
+              </div>
+              <div class="title">
+                How To Unclog A Spray Bottle Or Aerosol Can Nozzle?
+              </div>
+              <div class="text">
+                Spray bottles and aerosol cans can easily get clogged, rendering
+                them useless. But before you toss it out, try these simple
+                methods to unclog the nozzle and get your sprayer working again
+                ...
+              </div>
+            </div>
+            <div class="news n-2">
+              <div class="image">
+                <img src=".././images/News/glass.jpg" alt="image" />
+              </div>
+              <div class="d-flex">
+                <div>
+                  <i class="fa-regular fa-clock fa-sm"></i>
+                  <span class="day">26/02/2024</span>
+                </div>
+                <div>
+                  <i class="fa-regular fa-eye fa-sm"></i>
+                  <span class="day">100</span>
+                </div>
+              </div>
+              <div class="title">
+                Is It Safe To Put Bleach In A Spray Bottle?
+              </div>
+              <div class="text">
+                Bleach is a powerful disinfectant that can sanitize surfaces and
+                kill germs. But is it safe to put bleach in a spray bottle? This
+                comprehensive guide covers everything you need to know. The
+                Short Answer Yes, you can safely put diluted bleach in a spray
+                bottle for cleaning and disinfecting.
+              </div>
+            </div>
+            <div class="news n-3">
+              <div class="image">
+                <img src=".././images/News/bottle.jpg" alt="image" />
+              </div>
+              <div class="d-flex">
+                <div>
+                  <i class="fa-regular fa-clock fa-sm"></i>
+                  <span class="day">10/02/2024</span>
+                </div>
+                <div>
+                  <i class="fa-regular fa-eye fa-sm"></i>
+                  <span class="day">36</span>
+                </div>
+              </div>
+              <div class="title">How To Get Lotion Out Of Bottle</div>
+              <div class="text">
+                Empty lotion bottles that still have product left in them are a
+                common frustration. Pump bottles in particular seem designed to
+                leave an inch or two of lotion stuck at the bottom. While it may
+                seem like a trivial “first world problem”, the truth is…
+              </div>
+            </div>
+            <div class="box-btn">
+              <span class="btn"
+                ><a href=".././HTML/news.html">Read More</a></span
+              >
+            </div>
+          </section>
+        </aside>
+      </section>
+    </div>
+    <!-- --------------- Footer ---------------- -->
+    <footer>
+      <div class="box">
+        <div class="part-1">
+          <div class="socialsAndContact">
+            <!-- --------------- Text header and Socials ---------------- -->
+            <div class="col-5">
+              <div class="text-header">PETBot Company</div>
+              <!-- --------------- Social ---------------- -->
+              <div class="socials">
+                <a
+                  href="https://www.facebook.com/"
+                  title="Facebook"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook fa"></i
+                ></a>
+                <a href="https://twitter.com/" title="Twitter" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/"
+                  title="Instagram"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com/"
+                  title="Linkedin"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://youtube.com/" title="Youtube" target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+              <p>Team with 5 members.</p>
+            </div>
+            <!-- --------------- Contact Us ---------------- -->
+            <div class="col-1">
+              <div class="gmail">
+                <i class="fa-solid fa-envelope"></i> petbot@company.com
+              </div>
+              <div class="phoneNumber">
+                <i class="fa-solid fa-phone"></i> +84 36-384-568
+              </div>
+              <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                8 Ton That Thuyet, My Dinh,<br />
+                Nam Tu Liem, Ha Noi.
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d515.5973385199616!2d105.78198186858313!3d21.028761111310168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab00954decbf%3A0xdb4ee23b49ad50c8!2zRlBUIEFwdGVjaCBIw6AgTuG7mWkgLSBI4buHIHRo4buRbmcgxJHDoG8gdOG6oW8gbOG6rXAgdHLDrG5oIHZpw6puIHF14buRYyB04bq_!5e0!3m2!1svi!2s!4v1707111828114!5m2!1svi!2s"
+                width="300"
+                height="180"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- --------------- Link  ---------------- -->
+          <div class="col-3 col">
+            <div class="text-header">| By Application</div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Water Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Juice Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Lotion Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Medicine Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Oil Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Chemical Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Travel Set Bottle</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 col">
+            <div class="text-header">| By Type</div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href=".././HTML/airlessPumpBottle.html">Airless Pump Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Boston Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Foam Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Spray Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Square Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Squeeze Bottle</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col">
+            <div class="text-header">| By Material</div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-caret-right"></i><a href="">PET</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i><a href="">PP</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i><a href="">PC</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 col">
+            <div class="text-header">| Comestic Container</div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Roll Ball Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Sunscreen Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Skin Lotion Bottle</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i
+                ><a href="">Cream Bottle</a>
+              </li>
+            </ul>
+          </div>
+          <!-- --------------- End link ---------------- -->
+        </div>
+        <div class="part-2">&copy;PETBot 2024. All right reserved</div>
+      </div>
+    </footer>
+  </body>
+</html>

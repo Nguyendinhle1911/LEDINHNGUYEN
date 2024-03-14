@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <!-- Link Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href=".././images/Favicon/favicon.ico"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href=".././CSS/main.css" />
+    <style>
+      body {
+        background-image: url(".././images/LoginAndRegister/bg-bottle.jpg");
+        background-position: center center;
+        background-size: 100%;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: r;
+      }
+      .form-container {
+        color: #000000;
+        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 20%;
+        display: none;
+        margin: 6rem auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+      }
+      .form-container h2 {
+        margin: 0 0 20px;
+        text-align: center;
+      }
+      .form-container form {
+        display: flex;
+        flex-direction: column;
+      }
+      .form-container label {
+        font-weight: bold;
+      }
+      .form-container input {
+        outline: none;
+        color: #000000;
+        background-color: #ffffff;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ffffff;
+      }
+      input:hover {
+        background-color: aliceblue;
+      }
+
+      .form-container input[type="submit"] {
+        border: none;
+        background-color: #323232;
+        color: #fff;
+        cursor: pointer;
+      }
+      .form-container input[type="submit"]:hover {
+        background-color: #454545;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loginForm" class="form-container">
+      <h2>Admin Login</h2>
+      <form method="post">
+        <label for="loginUsername">Username:</label>
+        <input
+          type="text"
+          id="loginUsername"
+          name="loginUsername"
+          placeholder="Enter your Username"
+          required
+        /><br />
+        <label for="loginPassword">Password:</label>
+        <input
+          type="password"
+          id="loginPassword"
+          name="loginPassword"
+          placeholder="Enter your Password"
+          required
+        /><br />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+    <script>
+      function showLoginForm() {
+        document.getElementById("loginForm").style.display = "block";
+      }
+      showLoginForm();
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+          window.location.href = ".././HTML/admin.html";
+        });
+    </script>
+  </body>
+</html>
