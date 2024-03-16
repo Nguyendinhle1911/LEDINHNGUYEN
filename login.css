@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    min-height: 100vh;
+    background-image: url(".././images/LoginAndRegister/bg-bottle.jpg");
+    background-position: center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+a i {
+    border-radius: 50%;
+    margin: 1rem 0 1rem;
+    padding: 0.5rem;
+}
+
+a i:hover {
+    opacity: 0.8;
+}
+
+.main {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 100%;
+    min-width: 18rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    /* font-weight: bold; */
+}
+
+input {
+    color: #000000;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+input:hover,
+input::after {
+    background-color: aliceblue;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #343232;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 0.8rem;
+}
+p a {
+    text-decoration: underline;
+}
+
+p a:hover {
+    text-decoration: none;
+}

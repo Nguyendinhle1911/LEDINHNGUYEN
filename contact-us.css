@@ -1,0 +1,93 @@
+body {
+    background-color: #fff;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    padding-top: 5rem;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    height: max-content;
+}
+
+#contact {
+    width: 40%;
+}
+
+#map i {
+    padding: 0.4rem;
+}
+
+#map {
+    margin-top: 6.5rem;
+    width: 55%;
+}
+
+#detail-contact {
+    margin-top: 1rem;
+    height: max-content;
+}
+
+form {
+    margin-top: 2rem;
+    flex-direction: column;
+    display: flex;
+}
+
+form label {
+    padding-top: 1.5rem;
+    padding-bottom: 0.4rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    padding: 0.4rem;
+}
+
+textarea,
+input,
+button {
+    border: 1px solid #bababa;
+    outline: none;
+}
+
+::placeholder {
+    font-style: italic;
+    color: #c4c4c4;
+}
+
+.submit {
+    margin-top: 1rem;
+    background: transparent;
+    padding: 0.5rem;
+}
+
+.submit:hover {
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    #contact,
+    #map {
+        width: 100%;
+    }
+
+    iframe {
+        height: 20rem;
+    }
+}
