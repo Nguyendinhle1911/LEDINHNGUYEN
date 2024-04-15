@@ -35,7 +35,7 @@ $students = $studentManager->getAllStudentsWithMarks();
 
     <h3>Student List</h3>
 
-    <a href="add_student.php" class="btn btn-success mb-3">Add Student</a>
+    <a href="phone_book.php" class="btn btn-success mb-3">Add Student</a>
     <table class="table">
         <thead>
         <tr>
