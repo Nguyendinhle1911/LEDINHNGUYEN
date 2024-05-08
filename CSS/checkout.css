@@ -1,0 +1,254 @@
+body {
+  font-family: monospace;
+  overflow-x: hidden;
+  font-synthesis: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  max-width: 90%;
+  transition: transform 1s;
+}
+
+.checkoutLayout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 5rem 20px 20px 20px;
+}
+
+.checkoutLayout .right {
+  background-color: #202020;
+  padding: 40px;
+  color: #fff;
+}
+
+.checkoutLayout .right .ship{
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+}
+.checkoutLayout .right .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  border-bottom: 1px solid #454547;
+  padding-bottom: 20px;
+}
+
+.checkoutLayout .form h1,
+.checkoutLayout .form .group:nth-child(-n+3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* .checkoutLayout .form input {
+    outline: none;
+} */
+.checkoutLayout .form input::placeholder {
+  color: #c2c2c2;
+  font-style: italic;
+}
+
+.checkoutLayout .form input,
+.checkoutLayout .form select {
+  outline: none;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  border: none;
+  background-color: #424246;
+  color: #fff;
+}
+
+.checkoutLayout .right .return .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkoutLayout .right .return .row div:nth-child(2) {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.buttonCheckout {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #bab8b8;
+}
+
+.buttonCheckout:hover {
+  background-color: #393e3d;
+}
+
+.returnCart h1 {
+  border-top: 1px solid #b8b8b8;
+  padding: 20px 0;
+}
+
+.returnCart h2 a {
+  color: #000000;
+}
+
+.returnCart h2 {
+  padding-bottom: 1rem;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.returnCart h2 a:hover {
+  color: #727171;
+}
+
+.returnCart .list .item img {
+  height: 80px;
+}
+
+.returnCart .list .item {
+  display: grid;
+  grid-template-columns: 80px 1fr 50px 80px;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 1rem 10px;
+  background-color: #f4f4f1;
+}
+
+.returnCart .list .item .name,
+.returnCart .list .item .returnPrice {
+  font-size: large;
+  font-weight: bold;
+}
+
+.return {
+  border-bottom: 1px solid #454547;
+}
+
+/* Popup when buy product success */
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  width: 350px;
+  height: max-content;
+  padding: 30px 20px;
+  background: #ffffff;
+  box-sizing: border-box;
+  z-index: 2;
+  text-align: center;
+  opacity: 0;
+  top: -400%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: opacity 300ms ease-in-out,
+    top 1000ms ease-in-out,
+    transform 1000ms ease-in-out;
+}
+
+.popup.active {
+  opacity: 1;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
+
+.popup .icon {
+  margin: 5px 0px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000000;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 60px;
+}
+
+.popup .icon i.fa {
+  font-size: 30px;
+  color: #000000;
+}
+
+.popup .title {
+  margin: 5px 0px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.popup .description {
+  color: #222;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.popup .dismiss-btn {
+  margin-top: 15px;
+}
+
+.popup .dismiss-btn button {
+  padding: 10px 20px;
+  background: #111;
+  color: #f5f5f5;
+  border: 2px solid #111;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.popup .dismiss-btn button:hover {
+  color: #111;
+  background: #f5f5f5;
+}
+
+.popup>div {
+  position: relative;
+  top: 10px;
+  opacity: 0;
+}
+
+.popup.active>div {
+  top: 0px;
+  opacity: 1;
+}
+
+.popup.active .icon {
+  transition: all 300ms ease-in-out 250ms;
+}
+
+.popup.active .title {
+  transition: all 300ms ease-in-out 300ms;
+}
+
+.popup.active .description {
+  transition: all 300ms ease-in-out 350ms;
+}
+
+.popup.active .dismiss-btn {
+  transition: all 300ms ease-in-out 400ms;
+}
+
+@media (max-width: 1100px) {
+  .checkoutLayout {
+    margin: auto;
+    display: block;
+    max-width: 630px;
+  }
+}

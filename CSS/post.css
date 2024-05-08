@@ -1,0 +1,201 @@
+.navigate {
+    gap: 1rem;
+    margin-left: 5%;
+    align-items: center;
+    padding: 8rem 0 3rem 0;
+}
+
+.navigate a {
+    color: #000000;
+}
+
+.navigate a:hover {
+    opacity: 0.8;
+}
+
+.bg-post {
+    padding-top: 2rem;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.content-wrapper {
+    box-shadow: 5px 0.2rem 35px 1px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    padding-top: 1rem;
+    width: 95%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.bg-post .main {
+    padding: 2rem;
+    width: 60%;
+}
+
+.bg-post .main .title {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 2rem;
+}
+
+.content-wrapper aside {
+    width: 25%;
+    margin: 3rem auto;
+}
+
+.detail-view {
+    font-size: 0.9rem;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.detail-view span {
+    padding: 0 2rem 0 0.5rem;
+}
+
+.bg-post .main .image {
+    width: 100%;
+    min-height: 60vh;
+}
+
+.bg-post .main img {
+    min-height: 60vh;
+    width: 100%;
+}
+
+.bg-post .main .text p {
+    padding: 0.5rem 0;
+}
+
+.bg-post .main .text h2 {
+    padding-top: 0.5rem;
+}
+
+.bg-post .main .text {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.bg-post .main .share {
+    float: right;
+    padding: 1rem 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.bg-post .main .share i {
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 2rem;
+}
+
+.bg-post .main .share i:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.bg-post .main a {
+    color: #000000;
+}
+
+.bg-post .main .back {
+    opacity: 0.5;
+    font-size: 1rem;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.bg-post .main .back:hover {
+    opacity: 1;
+}
+
+#btn-download:hover {
+    opacity: 0.8;
+}
+
+aside .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+aside .news {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+aside .news image {
+    width: 100%;
+}
+
+aside .news img {
+    width: 100%;
+}
+
+aside .news .title {
+    font-size: 1rem;
+}
+
+aside .news .day {
+    font-size: 0.8rem;
+}
+
+aside .news .text {
+    font-size: 0.8rem;
+}
+
+aside .box-btn {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+aside .box-btn a {
+    background-color: #000000;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+aside .box-btn:hover {
+    opacity: 0.8;
+}
+
+.reply {
+    line-height: 2rem;
+    width: 70%;
+}
+
+.reply #title {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.reply input {
+    outline: none;
+    margin-top: -3rem;
+    padding: 0.5rem 2rem;
+}
+
+.reply textarea {
+    max-width: 800px;
+    outline: none;
+    height: max-content;
+}
+
+.reply textarea::placeholder {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.reply button {
+    padding: 0.5rem 0.5rem;
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+.reply button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

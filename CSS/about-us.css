@@ -1,0 +1,47 @@
+/* Banner */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner .image {
+    background-image: url('.././images/AboutUs/About-us-banner.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+}
+
+.banner .text {
+    color: #ffffff;
+    position: relative;
+    left: 5%;
+    top: -120px;
+    font-size: 2rem;
+    font-variant: small-caps;
+    border-left: 2px;
+    font-weight: 100;
+}
+
+.banner span {
+    padding: 0 10px;
+    border-bottom: 3px solid;
+}
+
+/* Content */
+.content .box {
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    line-height: 30px;
+}
+
+.content .box .text-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.part p {
+    margin-bottom: 40px;
+    width: 80%;
+}

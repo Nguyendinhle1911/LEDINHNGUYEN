@@ -1,0 +1,256 @@
+.sidebar {
+    line-height: 2rem;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #333;
+    padding: 20px;
+    color: #fff;
+    overflow: auto;
+}
+
+.sidebar h2 {
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.sidebar ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+    background-color: #4e4e4e;
+    padding: 0.8rem 0;
+}
+
+.sidebar ul li:hover {
+    opacity: 0.8;
+}
+
+/* .sidebar ul ul {
+    display: none;
+} */
+
+.main-content {
+    width: 75%;
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #fff;
+    /* border-left: 1px solid #ddd; */
+}
+
+.main-content h2 {
+    color: #333;
+}
+
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-content th,
+.main-content td {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.main-content th {
+    border: 1px solid #e6e6e6;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* background-color: #333; */
+    color: rgb(0, 0, 0);
+}
+
+.main-content button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.main-content button:hover {
+    opacity: 0.8;
+}
+
+.main-content form {
+    margin-bottom: 20px;
+}
+
+.main-content form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-content form input[type="text"],
+.main-content form input[type="file"],
+.main-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content form input[type="submit"] {
+    width: auto;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#table-header tr,
+#table-header th {
+    border: none;
+}
+
+#table-header {
+    margin-bottom: 1.5rem;
+}
+
+#table-header form {
+    margin-bottom: 0;
+    float: right;
+}
+
+#table-header input,
+#table-header select {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    margin: 0 1rem;
+}
+
+#table-header h2 {
+    float: left;
+}
+
+#table-header-1 tr,
+#table-header-1 th {
+    border: none;
+}
+
+#table-header-1 {
+    margin-bottom: 1.5rem;
+}
+
+#table-header-1 form {
+    margin-bottom: 0;
+    float: right;
+}
+
+#table-header-1 input,
+#table-header-1 select {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    margin: 0 1rem;
+}
+
+#table-header-1 h2 {
+    float: left;
+}
+
+#table-header i:hover,
+#table-header-1 i:hover {
+    opacity: 0.5;
+}
+
+/* Add some styling for the overview section */
+#box-overview {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: normal;
+}
+
+.overview-item {
+    line-height: 3rem;
+    text-align: center;
+    width: 200px;
+    padding: 2rem 7rem;
+    background-color: #ddd;
+    margin: 1rem 3rem 2rem 0;
+}
+
+.overview-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-container input[type="submit"] {
+    background-color: #222222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #5c5c5c;
+}
