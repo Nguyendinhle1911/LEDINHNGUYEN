@@ -1,6 +1,6 @@
-package session10.model;
+package SESSION.session10.model;
 
-import session10.entities.Product;
+import SESSION.session10.entities.Product;
 
 import javax.swing.*;
 import java.sql.Connection;
@@ -57,12 +57,22 @@ public class ProductDaoImpl implements ProductDAO {
 
     @Override
     public void updateProduct(Product product) throws SQLException {
+        pstm = conn.prepareStatement(SQL_UPDATE_PRODUCT);
+        pstm.setInt(1,product.getProductId());
+        pstm.setString(2,product.getProductName());
+        pstm.setString(3,product.getProductDesc());
+        pstm.setDouble(4,product.getPrice());
+        pstm.executeUpdate();
+
 
     }
 
     @Override
     public boolean deleteProduct(int prodId) throws SQLException {
-        return false;
+       pstm = conn.prepareStatement(SQL_DELETE_PRODUCT);
+       pstm.setInt(1,prodId);
+       pstm.executeUpdate();
+       return true;
     }
 
     @Override

@@ -1,7 +1,7 @@
-package session10.view;
+package SESSION.session10.view;
 
-import session10.controller.ProductController;
-import session10.entities.Product;
+import SESSION.session10.controller.ProductController;
+import SESSION.session10.entities.Product;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -19,6 +19,8 @@ public class ProductConsoleUI {
         System.out.println("====Product Management====");
         System.out.println("1. All product");
         System.out.println("2. Create product");
+        System.out.println("3. Delete product");
+        System.out.println("4. Update product");
         System.out.println("0. Exit product");
         int choice = Integer.parseInt(sc.nextLine());
         return choice;
@@ -46,6 +48,25 @@ public class ProductConsoleUI {
         Product product = new Product(prod_id,name,product_desc,price);
         productController.createProductController(product);
     }
+    public void deleteProduct() throws SQLException{
+        System.out.println("Enter id: ");
+        int prod_id = Integer.parseInt(sc.nextLine());
+        productController.deleteProductController(prod_id);
+
+    }
+    public void updateProduct() throws SQLException{
+        System.out.println("Enter id: ");
+        int prod_id = Integer.parseInt(sc.nextLine());
+        System.out.println("Enter product name : ");
+        String product_name = sc.nextLine();
+        System.out.println("Enter product desc : ");
+        String product_desc = sc.nextLine();
+        System.out.println("Enter price: ");
+        double price = Double.parseDouble(sc.nextLine());
+        Product product = new Product(prod_id,product_name,product_desc,price);
+        productController.updateProductController(product);
+
+    }
     public void start() throws SQLException{
         while (true){
             int choice = menu();
@@ -53,6 +74,8 @@ public class ProductConsoleUI {
                 case 0: System.exit(0);break;
                 case 1: getAllProductUI();break;
                 case 2: createProduct();break;
+                case 3: deleteProduct();break;
+                case 4: updateProduct();break;
                 default: throw new AssertionError();
             }
         }

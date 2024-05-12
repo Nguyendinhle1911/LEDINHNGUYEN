@@ -1,4 +1,4 @@
-package session10.model;
+package SESSION.session10.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package session10.entities;
+package SESSION.session10.entities;
 
 public class Product {
     private int productId;

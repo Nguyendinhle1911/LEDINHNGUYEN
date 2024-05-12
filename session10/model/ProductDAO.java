@@ -1,6 +1,6 @@
-package session10.model;
+package SESSION.session10.model;
 
-import session10.entities.Product;
+import SESSION.session10.entities.Product;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

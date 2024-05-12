@@ -1,8 +1,7 @@
-package session10.controller;
+package SESSION.session10.controller;
 
-import session10.entities.Product;
-import session10.model.ProductDaoImpl;
-
+import SESSION.session10.entities.Product;
+import SESSION.session10.model.ProductDaoImpl;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -22,4 +21,10 @@ public class ProductController {
         productDaoImpl.createProduct(product);
     }
     //code tiep cac controller method khac ben duoi
+    public  void deleteProductController(int prodId) throws SQLException{
+        productDaoImpl.deleteProduct(prodId);
+    }
+    public void updateProductController(Product product) throws SQLException{
+        productDaoImpl.updateProduct(product);
+    }
 }

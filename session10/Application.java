@@ -1,6 +1,6 @@
-package session10;
+package SESSION.session10;
 
-import session10.view.ProductConsoleUI;
+import SESSION.session10.view.ProductConsoleUI;
 
 import java.sql.SQLException;
 
