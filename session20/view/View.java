@@ -54,10 +54,10 @@ public class View {
     }
     private int menu(){
         System.out.println("=====Contact=====");
-        System.out.println("1. Add Contact");
-        System.out.println("2. Search Contact By Name");
-        System.out.println("3. View All Contacts");
-        System.out.println("0. Exit");
+        System.out.println("1. Add new contact");
+        System.out.println("2. Find a contact by name");
+        System.out.println("3. Display contacts");
+        System.out.println("4. Exit");
         int choice = Integer.parseInt(sc.nextLine());
         return choice;
     }
@@ -69,7 +69,7 @@ public class View {
                 case 1: addContactUI();break;
                 case 2: searchContactUI();break;
                 case 3: viewAllContactUI();break;
-                case 0: System.exit(0);break;
+                case 4: System.exit(0);break;
                 default: throw new AssertionError();
             }
         }
