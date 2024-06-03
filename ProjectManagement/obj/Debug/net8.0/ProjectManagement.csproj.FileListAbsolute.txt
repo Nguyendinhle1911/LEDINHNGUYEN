@@ -1,0 +1,78 @@
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/ProjectManagement
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/ProjectManagement.deps.json
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/ProjectManagement.runtimeconfig.json
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/ProjectManagement.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/ProjectManagement.pdb
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/Google.Protobuf.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/K4os.Compression.LZ4.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/K4os.Compression.LZ4.Streams.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/K4os.Hash.xxHash.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/MySql.Data.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/ZstdNet.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/comerr64.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/gssapi64.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/k5sprt64.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/krb5_64.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/krbcc64.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/BouncyCastle.Crypto.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/System.Drawing.Common.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/System.Security.Permissions.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/System.Windows.Extensions.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ProjectManagement.csproj.AssemblyReference.cache
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ProjectManagement.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ProjectManagement.AssemblyInfoInputs.cache
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ProjectManagement.AssemblyInfo.cs
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ProjectManagement.csproj.CoreCompileInputs.cache
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ProjectM.83DF0853.Up2Date
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ProjectManagement.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/refint/ProjectManagement.dll
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ProjectManagement.pdb
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ProjectManagement.genruntimeconfig.cache
+/Users/ss/dotnetproject/pro3/ProjectManagement/obj/Debug/net8.0/ref/ProjectManagement.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\ProjectManagement.exe
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\ProjectManagement.deps.json
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\ProjectManagement.runtimeconfig.json
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\ProjectManagement.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\ProjectManagement.pdb
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\ZstdNet.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\comerr64.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\gssapi64.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\k5sprt64.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\krb5_64.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\krbcc64.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ProjectManagement.csproj.AssemblyReference.cache
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ProjectManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ProjectManagement.AssemblyInfoInputs.cache
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ProjectManagement.AssemblyInfo.cs
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ProjectManagement.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ProjectM.83DF0853.Up2Date
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ProjectManagement.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\refint\ProjectManagement.dll
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ProjectManagement.pdb
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ProjectManagement.genruntimeconfig.cache
+C:\Users\Nguyen\VS code\pro3\ProjectManagement\obj\Debug\net8.0\ref\ProjectManagement.dll
