@@ -1,0 +1,136 @@
+body {
+    display: block;
+    margin: 8px;
+    color: #774b4b;
+    background-color: #a76e6e;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #b07171;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    margin: 0 10px;
+    color: #333;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #b07171;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contact-info ul {
+    padding: 0;
+    list-style: none;
+}
+.contact-info i {
+    color: #b07171;
+    margin-left:px; 
+}
+
+.contact-info ul li {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+    color: #b07171;
+}
+
+.contact-info p {
+    margin-bottom: 40px;
+
+}
+
+.contact-form .input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form label i {
+    margin-right: 5px;
+    color: #b07171;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+    margin-top: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #b07171;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #b07171;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form button i {
+    margin-right: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #a06060;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
