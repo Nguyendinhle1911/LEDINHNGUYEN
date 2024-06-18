@@ -1,48 +1,156 @@
 ﻿using System;
-using System.Net.Http.Headers;
 using MySql.Data.MySqlClient;
-using ProjectManagement.controller;
-using ProjectManagement.model;
-using ProjectManagement.service;
 
-namespace ProjectManagement{
-    class Program{
-        static string connectionString ="Server=127.0.0.1;Database=prodb;User Id=root;Password=;";
-        public static void Main(string[] args)
+class Contact
+{
+    public string Name { get; set; }
+    public string PhoneNumber { get; set; }
+
+    public Contact(string name, string phoneNumber)
+    {
+        Name = name;
+        PhoneNumber = phoneNumber;
+    }
+}
+
+class ContactManager
+{
+    static MySqlConnection connection = new MySqlConnection("Server=localhost;Port=3306;Database=CSharpTest;User=root;Password=;");
+
+    static void AddContact()
+{
+    Console.Write("Enter contact name: ");
+    string name = Console.ReadLine();
+    Console.Write("Enter contact phone number: ");
+    string phoneNumber = Console.ReadLine();
+
+    using (MySqlConnection connection = new MySqlConnection("Server=localhost;Port=3306;Database=CSharpTest;User=root;Password=;"))
+    {
+        string query = "INSERT INTO contacts (Name, PhoneNumber) VALUES (@Name, @PhoneNumber)";
+        MySqlCommand command = new MySqlCommand(query, connection);
+        command.Parameters.AddWithValue("@Name", name);
+        command.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+
+        connection.Open();
+        int result = command.ExecuteNonQuery();
+
+        if (result > 0)
         {
-            IProductService productService = new ProductService(connectionString);
-            ProductController productController = new ProductController(productService);
-            while(true){
-                Console.WriteLine("Product Management");
-                Console.WriteLine("1. Add product");
-                Console.WriteLine("2. Display all products");
-                Console.WriteLine("3. Find Product By ID");
-                Console.WriteLine("4. Edit Product");
-                Console.WriteLine("5. Delete Product");
-                Console.WriteLine("6. Exit");
-                Console.WriteLine("Choose an option: ");
-                string choice = Console.ReadLine();
+            Console.WriteLine("Contact added successfully!\n");
+        }
+        else
+        {
+            Console.WriteLine("Failed to add contact.\n");
+        }
+    }
+}
 
-                switch(choice){
-                    case "1": 
-                        Console.WriteLine("Enter product name: ");
-                        string name = Console.ReadLine();
-                        Console.WriteLine("Etner product price: ");
-                        decimal price = Convert.ToDecimal(Console.ReadLine());
-                        Console.WriteLine("Enter product description: ");
-                        string description = Console.ReadLine();
-                        Product newProduct = new Product{Name = name, Price = price, Description = description};
-                        productController.AddProduct(newProduct);
-                        Console.WriteLine("Product added Successfully!!!!");
-                        break;
-                    case "2": 
-                        break;
-                    case "3": return;
-                    default:
-                        Console.WriteLine("Invalid choice, pls try again");
-                        break;
-                }
+static void DisplayContacts()
+{
+    using (MySqlConnection connection = new MySqlConnection("Server=localhost;Port=3306;Database=CSharpTest;User=root;Password=;"))
+    {
+        string query = "SELECT Name, PhoneNumber FROM contacts";
+        MySqlCommand command = new MySqlCommand(query, connection);
+
+        connection.Open();
+        using (MySqlDataReader reader = command.ExecuteReader())
+        {
+            Console.WriteLine("\tAddress Book\n");
+            Console.WriteLine("Contact Name\tPhone Number");
+
+            while (reader.Read())
+            {
+                Console.WriteLine($"{reader["Name"]}\t{reader["PhoneNumber"]}\n");
             }
         }
     }
 }
+
+static void FindContact()
+{
+    Console.Write("Enter name to find: ");
+    string searchName = Console.ReadLine();
+
+    using (MySqlConnection connection = new MySqlConnection("Server=localhost;Port=3306;Database=CSharpTest;User=root;Password=;"))
+    {
+        string query = "SELECT PhoneNumber FROM contacts WHERE Name = @Name";
+        MySqlCommand command = new MySqlCommand(query, connection);
+        command.Parameters.AddWithValue("@Name", searchName);
+
+        connection.Open();
+        var result = command.ExecuteScalar();
+
+        if (result != null)
+        {
+            Console.WriteLine($"Phone number for {searchName}: {result}\n");
+        }
+        else
+        {
+            Console.WriteLine("Contact not found!\n");
+        }
+    }
+}
+
+    static void Main()
+    {
+        try
+        {
+            connection.Open();
+            Console.WriteLine("Connected to MySQL Database");
+
+            int option = 0;
+
+            while (option != 4)
+            {
+                Console.WriteLine("Contact Manager Menu:");
+                Console.WriteLine("1. Add new contact");
+                Console.WriteLine("2. Find a contact by name");
+                Console.WriteLine("3. Address book");
+                Console.WriteLine("4. Exit");
+
+                Console.Write("Enter your choice: ");
+                option = Convert.ToInt32(Console.ReadLine());
+
+                switch (option)
+                {
+                    case 1:
+                        AddContact();
+                        break;
+
+                    case 2:
+                        FindContact();
+                        break;
+
+                    case 3:
+                        DisplayContacts();
+                        break;
+
+                    case 4:
+                        Console.WriteLine("Exiting Contact Manager. Goodbye!");
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid option. Please try again.\n");
+                        break;
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+        finally
+        {
+            connection.Close();
+        }
+    }
+}
+// database
+
+//CREATE DATABASE CSharpTest
+//CREATE TABLE contacts (
+ // id int(11) NOT NULL auto_increment,
+ // Name varchar(50) NOT NULL,
+//  PhoneNumber varchar(20) NOT NULL,
+ // PRIMARY KEY (id)
+//)
