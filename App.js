@@ -1,62 +1,40 @@
 import React, { useState } from 'react';
+import './App.css'; // Đảm bảo rằng bạn có tệp CSS này để tạo kiểu
+import CounterUp from "./components/CounterUp";
+import Partner from "./components/Partner";
+import CountUp from "react-countup";
+import Header from "./components/Header";
+import AboutUs from "./components/AboutUs";
+import Footer from "./components/Footer";
+import Recruitment from "./components/Recruitmen";
+import Service from "./components/Service";
+import Contact from "./components/Contact";
 
-const App = () => {
-  const [books, setBooks] = useState([]);
-  const [newBook, setNewBook] = useState({
-    title: '',
-    author: '',
-   
-  });
+function New() {
+    return null;
+}
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setNewBook({ ...newBook, [name]: value });
-  };
+function App() {
 
-  const handleAddBook = () => {
-    
-    if (!newBook.title || !newBook.author) {
-      alert('Please fill in all fields.');
-      return;
-    }
+    return (
+        <div>
 
-   
-    setBooks([...books, newBook]);
+            {/*<Header />*/}
 
-   
-    setNewBook({
-      title: '',
-      author: '',
-     
-    });
+            {/*<AboutUs />*/}
 
-   
-    alert('New book added!');
-  };
+            {/*<CounterUp />*/}
 
-  return (
-    <div>
-      <h1>Add a new book</h1>
-      <div>
-        <label>Title:</label>
-        <input type="text" name="title" value={newBook.title} onChange={handleInputChange} />
-      </div>
-      <div>
-        <label>Author:</label>
-        <input type="text" name="author" value={newBook.author} onChange={handleInputChange} />
-      </div>
-     
+        {/*<Partner/>*/}
 
-      <button onClick={handleAddBook}>Add Book</button>
+            {/*<Footer/>*/}
+{/*<Service/>*/}
+            <Contact/>
 
-      <h2>All Books</h2>
-      <ul>
-        {books.map((book, index) => (
-          <li key={index}>{`${book.title} by ${book.author}`}</li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+        </div>
+
+
+    );
+}
 
 export default App;
