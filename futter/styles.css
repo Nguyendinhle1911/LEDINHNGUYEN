@@ -1,20 +1,10 @@
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
-    font-family: Arial, sans-serif;
-    font-size: 100%;
-    height: 100%;
-    margin: 0;
-    background-color: #e5e5e5;
-    display: flex;
-    justify-content: center; /* Center footer horizontally */
-    align-items: center; /* Center footer vertically */
-}
 
 footer {
     width: 100%;
@@ -120,14 +110,14 @@ footer {
 .footer-profile .btn:hover {
     background-color: #004bb5;
 }
-/* Reset margin and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic styling */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -140,35 +130,29 @@ body {
 
 .footer-content {
     display: flex;
-    justify-content: space-around; /* Dàn các cột theo chiều ngang và canh giữa */
-    flex-wrap: wrap; /* Cho phép các cột xuống dòng khi không đủ không gian */
-}
+    justify-content: space-around; 
+    flex-wrap: wrap; }
+
 
 .footer-column {
-    flex: 1; /* Cột có độ rộng bằng nhau */
-    padding: 0 15px; /* Khoảng cách giữa các cột */
-    text-align: left; /* Căn lề trái cho nội dung trong cột */
-}
+    flex: 1; 
+    padding: 0 15px; 
+    text-align: left;}
 
 h3 {
     font-size: 14px;
-    color: #004bb5; /* Cỡ chữ cho tiêu đề h3 */
-    margin-bottom: 10px; /* Khoảng cách dưới của tiêu đề */
+    color: #004bb5;
+    margin-bottom: 10px; 
 }
 
+
 ul {
-    list-style-type: none; /* Ẩn chấm đầu dòng */
+    list-style-type: none;
     padding: 0;
     margin-top: 10px
 }
 
+.footer .footer-col ul li img{
+    color: #004bb5;
 
-/* Icon style */
-.fas {
-    margin-right: 5px; 
-    color: #004bb5;/* Khoảng cách phải của biểu tượng */
-}
-.fa-file-arrow-down:before, .fa-file-download:before {
-    content: "\f56d";
-    color: black;
 }
