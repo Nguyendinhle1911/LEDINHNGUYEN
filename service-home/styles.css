@@ -1,0 +1,179 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; }
+
+body {
+    font-family: Arial, sans-serif; 
+    font-size: 1.6rem; 
+    background-color: #f2f2f2;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+.section-title,
+h1,
+h2,
+h3 {
+    font-family: "Font Awesome 6 Pro", Arial, sans-serif; 
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 2.3rem;
+    color: #0044a5;
+}
+
+h2,
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0; }
+
+h3 {
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--size, 1920px); 
+    margin: 0 auto;
+}
+
+.row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: -1.5625rem;
+    margin-left: -1.5625rem;
+}
+.row, .row>* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.col-6 {
+    flex: 0 0 50%; 
+    max-width: 100%;
+    padding: 1.5rem; 
+}
+
+
+.home-service-item {
+    display: block;
+    position: relative;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.home-service-item-img img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-service-item:hover .home-service-item-img img {
+    transform: scale(1.05);
+}
+
+.home-service-item-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.6rem 6rem; 
+    background: rgba(47, 77, 120, 0.8);
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: calc(1.6rem * 1.67); 
+}
+
+
+
+    .has-divider:before {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background-color: #086cf9;
+        width: 2.6rem;
+        height: 1px;
+        content: "";
+    }
+
+    .home-service-item .home-service-item-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(5, 76, 175, 0.8), rgba(65, 117, 133, 0.16));
+        padding: 0.73rem 1.5625rem;
+    }
+
+    .row {
+        margin: -1.5rem;
+    }
+
+    .col-6 {
+        flex: 0 0 50%; 
+        max-width: 50%;
+        padding: 1.5rem;
+    }
+@media (min-width: 1025px) {
+    .home-service .home-service-item .home-service-item-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: -o-linear-gradient(top, rgba(0, 91, 219, .8) 0, rgba(65, 117, 133, .16) 100%);
+        background: linear-gradient(180deg, rgba(0, 91, 219, .8), rgba(65, 117, 133, .16));
+        padding: .72917rem 1.5625rem;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+    }
+}
+.section-title, h1 {
+    font-size: 2.29167rem;
+    font-weight: 600;
+    line-height: 1.18182;
+}
+
+@media (min-width: 1025px) {
+    .has-divider {
+        padding-bottom: 1.5625rem;
+    }
+}
+.has-divider {
+    position: relative;
+    padding-bottom: 1.04167rem;
+}
+@media (min-width: 1025px) {
+    .mb-lg-10 {
+        margin-bottom: 2.5rem;
+    }
+}
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
