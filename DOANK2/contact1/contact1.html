@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="section">
+            <div class="section-heading">
+                <div class="title-container">
+                    <h1 class="section-title">Contact</h1> 
+                </div>
+                <ul class="tabs-nav"></ul>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="contact-info">
+                        <h2 class="text-heading-4">Contact Info</h2>
+                        <ul class="contact-list">
+                            <li><img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png" alt="phone--v1"/> Phone: (+84) 123 456 789</li>
+                            <li><img width="18" height="18" src="https://img.icons8.com/material-rounded/24/mail.png" alt="mail"/> FPT Health </li>
+                            <li><img width="18" height="18" src="https://img.icons8.com/ios-filled/50/visit.png" alt="visit"/> Visit: HaNoi </li>
+                        </ul>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.053539600276!2d106.68974531411331!3d10.762985262258165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f6f55e3b7b1%3A0x2ff4571e7a92451d!2sSample%20Location!5e0!3m2!1sen!2sus!4v1624709897650!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div id="contactFormContainer" class="contact-form">
+                        <div class="form-container">
+                            <p class="text-normal">Please fill out the form below to contact us. We will respond to you as soon as possible.</p>
+                            <form action="#" method="POST" id="contactForm" onsubmit="return validateForm()">
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <img width="18" height="18" src="https://img.icons8.com/ios-filled/50/mental-state.png" alt="mental-state"/> problem.
+                                        <input type="text" name="company" id="company" class="form-control" placeholder=" State your problem *" required>
+                                        <span width="18" height="18" src="https://img.icons8.com/ios-filled/50/mental-state.png" alt="mental-state" style="display:none;">What are you having problems with</span>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png" alt="phone--v1"/>Phone. 
+                                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone number *" required>
+                                        <span width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png" alt="phone--v1" style="display:none;">Please enter the phone number.</span>
+                                        <span width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png" alt="phone--v1" style="display:none;">invalid phone number.</span>
+                                    </div>
+                                    <div class="form-group col-6">
+                                      <i><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/name.png" alt="name"/></i> Name. 
+                                        <input type="text" name="fullname" id="fullname" class="form-control" placeholder="First and last name *" required>
+                                        <span img width="20" height="20" src="https://img.icons8.com/ios-filled/50/name.png" alt="name" style="display:none;">Please enter Full name.</span>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <i><img width="18" height="18" src="https://img.icons8.com/ios-filled/50/mail.png" alt="mail"/></i>Email. 
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email *" required>
+                                        <span img width="18" height="18" src="https://img.icons8.com/ios-filled/50/mail.png" alt="mail" style="display:none;">Please enter Email.</span>
+                                        <span img width="18" height="18" src="https://img.icons8.com/ios-filled/50/mail.png" alt="mail" style="display:none;">Invalid email.</span>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <i><img width="18" height="18" src="https://img.icons8.com/ios-filled/50/visit.png" alt="visit"/></i>Visit.
+                                        <input type="text" name="address" id="address" class="form-control" placeholder="Địa chỉ *" required>
+                                        <span img width="18" height="18" src="https://img.icons8.com/ios-filled/50/visit.png" alt="visit" style="display:none;">Please enter your address.</span>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <i><img width="18" height="18" src="https://img.icons8.com/ios-filled/50/service.png" alt="service"/></i>About service.
+                                        <select name="service" id="service" class="form-control" required>
+                                            <option value="">services.</option>
+                                            <option value="khám chữa bệnh">Healthcare. </option>
+                                            <option value="đặt lịch khám">Make an appointment.</option>
+                                            <option value="cơ sở vật chất">Infrastructure. </option>
+                                            <option value="Dịch vụ chăm sóc">Care services.</option>
+                                        </select>
+                                        <span img width="18" height="18" src="https://img.icons8.com/ios-filled/50/service.png" alt="service" style="display:none;">Please select Services.</span>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <i><img width="18" height="18" src="https://img.icons8.com/ios/50/speech-bubble-with-dots--v1.png" alt="speech-bubble-with-dots--v1"/></i> Mesage. 
+                                        <textarea name="message" id="message" class="form-control" rows="2" placeholder="Content*"></textarea>
+                                        <span img width="18" height="18" src="https://img.icons8.com/ios/50/speech-bubble-with-dots--v1.png" alt="speech-bubble-with-dots--v1" style="display:none;">Please enter Content.</span>
+                                    </div>
+                                </div>
+                                <div class="form-group frm-captcha">
+                                    <div class="form-group frm-btnwrap">
+                                        <div class="frm-btn">
+                                            <input type="submit" name="btnSubmit" value="Send" id="btnSubmit" class="btn btn-primary frm-btn-submit">
+                                            <input type="reset" name="btnReset" value="Erase" class="btn btn-secondary frm-btn-reset">
+                                            <input type="hidden" name="hdnResponseSetGuid" id="hdnResponseSetGuid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

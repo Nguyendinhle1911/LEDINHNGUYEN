@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Cơ sở y tế</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            gap: 20px;
+        }
+        .left-section, .right-section {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .left-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .left-section form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group label i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #555;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: calc(100% - 44px);
+            padding: 10px;
+            padding-left: 40px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .form-group textarea {
+            height: 120px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .right-section .contact-info {
+            text-align: center;
+        }
+        .right-section .contact-info div {
+            margin-bottom: 20px;
+        }
+        .right-section .contact-info i {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .right-section .mapouter {
+            text-align: center;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .right-section .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 300px;
+            width: 100%;
+        }
+        .right-section .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .right-section .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #333;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        .right-section .social-icons a:hover {
+            color: #007bff;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; /* Trên các thiết bị nhỏ hơn 768px, sử dụng 1 cột duy nhất */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-section">
+        <h2>Gửi tin nhắn cho chúng tôi</h2>
+        <form action="submit.php" method="post">
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Họ và tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="phone"><i class="fas fa-phone-alt"></i> Số điện thoại:</label>
+                <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment"></i> Nội dung tin nhắn:</label>
+                <textarea id="message" name="message" placeholder="Nhập nội dung tin nhắn của bạn" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Gửi tin nhắn">
+            </div>
+        </form>
+    </div>
+
+    <div class="right-section">
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Địa chỉ của bạn<br>Thành phố, Quốc gia</p>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <p>Số điện thoại của bạn<br>0349740970</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>Email của bạn<br>ledinhnguyen19112000@gmail.com</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook" style="color: #3b5998;"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a>
+                <a href="#"><i class="fab fa-instagram" style="color: #c13584;"></i></a>
+                <a href="#"><i class="fab fa-tiktok" style="color: #69c9d0;"></i></a>
+            </div>
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=your%20location&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Font Awesome Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+</body>
+</html>

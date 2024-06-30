@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1 1 25%;
+    padding: 0 15px;
+    margin-bottom: 1rem;
+}
+
+.footer-info h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #005bdb;
+    margin-bottom: 1rem;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-info ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-info ul li span {
+    color: #005bdb;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.footer-social ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.footer-social ul li {
+    margin-right: 1rem;
+}
+
+.footer-social ul li a {
+    color: #333;
+}
+
+.footer-social ul li a:hover {
+    color: #005bdb;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.footer-copyright a {
+    color: #005bdb;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+.footer-profile {
+    margin-top: 1rem;
+}
+
+.footer-profile .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #005bdb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
+.footer-profile .btn:hover {
+    background-color: #004bb5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; }
+
+
+.footer-column {
+    flex: 1; 
+    padding: 0 15px; 
+    text-align: left;}
+
+h3 {
+    font-size: 14px;
+    color: #004bb5;
+    margin-bottom: 10px; 
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px
+}
+
+.footer .footer-col ul li img{
+    color: #004bb5;
+
+}

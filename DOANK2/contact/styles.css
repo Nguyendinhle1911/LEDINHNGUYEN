@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #5356ad; /* Màu chữ chính */
+}
+.container {
+    margin: 21px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.left-section {
+    flex: 1 1 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-right: 22px;
+}
+.left-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.left-section form {
+    margin-top: 125px;
+}
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #1b0e0e;
+}
+.form-group label i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #9d1010; 
+}
+.form-group input[type="text"], 
+.form-group input[type="email"], 
+.form-group textarea {
+    width: calc(100% - 44px); /* Điều chỉnh lại khoảng cách để icon ở bên trái */
+    padding: 10px;
+    padding-left: 40px; /* Khoảng cách từ lề để icon vào */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+.form-group input[type="text"]:focus, 
+.form-group input[type="email"]:focus, 
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.form-group textarea {
+    height: 120px;
+}
+.form-group input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.right-section {
+    flex: 1 1 auto; /* Điều chỉnh flex-grow để phần tự động co giãn */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.contact-info {
+    text-align: center;
+}
+.contact-info div {
+    margin-bottom: 20px;
+}
+.contact-info i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff; /* Màu của icon */
+}
+.mapouter {
+    text-align: center;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 300px;
+    width: 100%;
+}
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333; /* Màu chữ của các icon */
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #007bff; /* Màu khi hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-section,
+    .right-section {
+        width: 100%;
+        margin-right: 0; /* Bỏ khoảng cách giữa left và right section khi trên thiết bị di động */
+    }
+}
